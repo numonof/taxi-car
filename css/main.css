@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding: 0;    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+.moon{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+background-color: #fff;
+transform: scale(0.3);
+position: absolute;
+top: -50px;
+left: 5%;
+box-shadow: 2px 2px 300px wheat;
+}
+.around{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, #04880481 10%, #461C0B 10%, #000);
+    position: absolute;
+    top: 250px;
+}
+.path{
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: 300px;
+    background-color:#111;
+}
+.center{
+    width: 100%;
+    margin-top: 150px;
+    border-top: 10px dashed wheat;
+}
+
+.around2{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(0deg, #000 5%, #461C0B 80%, #000);
+    position: absolute;
+    top: 650px;
+}
+.car{
+    animation: car 7s linear infinite;
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    border-top-left-radius:15%;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 25px;
+    border-top: 1px solid darkturquoise;
+    border-bottom: 8px solid #000;
+    display: flex;
+
+}
+.window1{
+    width: 80px;
+    height: 70px;
+    background-color: #000;
+    margin-top: 40px;
+    margin-left: 15px;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:20%;
+
+}
+.window2{
+    width: 130px;
+    height: 70px; 
+    background-color: #000;
+    margin-top: 40px;
+    margin-left: 10px;   
+    border-top-left-radius:5%;
+    border-bottom-left-radius:5%;
+
+    border-top-right-radius:5%;
+    border-bottom-right-radius:5%;
+
+}
+.window3{
+    width: 125px;
+    height: 70px; 
+    background-color: #000;
+    margin-top: 40px;
+    margin-left: 10px;   
+    border-top-right-radius: 90%;
+}
+.strong{
+    position: absolute;
+    width: 90px;
+    height:90px;
+    bottom: -25%;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.strong-too{
+    position: absolute;
+    width: 90px;
+    height:90px;
+    bottom: -25%;
+    right: 25px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.lamp{
+    position: absolute;
+    right: 0;
+    top: 60%;
+    width: 10px;
+    height: 25px;
+    background-color: #FFF;
+    box-shadow: 2px 0px 15px wheat;
+    border-radius: 50%;
+}
+.lamp2{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 10px;
+    height: 25px;
+    background-color:yellow;
+    box-shadow: 2px 0px 15px yellow;
+    border-radius: 50%;
+
+}
+.back-lamp{
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    width: 5px;
+    height: 35px;
+    background-color: red;
+    box-shadow: 2px 0px 15px red;
+ border-top-left-radius: 10px;
+}
+.let-lamp{
+ 
+    position: absolute;
+    left: -3px;
+    top: 65%;
+    width: 5px;
+    height: 25px;
+    background-color: yellow;
+    box-shadow: 2px 0px 15px yellow;
+ border-bottom-left-radius: 10px;
+}
+.diska{
+    animation : spin 0.2s linear infinite;
+    margin-top: 15px;
+    margin-left: 45%;
+    width: 10px;
+    height: 60px;
+    background-color: wheat;
+    display: inline-block;
+    
+}
+
+@keyframes car{
+    100%{
+        transform: translatex(1750px);
+    }
+    75%{
+        transform: translatex(1250px);
+    }
+    50%{
+        transform: translatex(750px);
+    }
+    25%{
+        transform: translatex(250px);
+    }
+    0%{
+        transform: translatex(-250px);
+    }
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
